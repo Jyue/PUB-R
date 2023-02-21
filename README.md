@@ -27,8 +27,8 @@ We use the tokenization tool in SpaCy which can be installed through:
 ## Data Preprocessing
 The original data files are put under data/multi-woz, which includes:
 
-- data.json: The orignal MultiWOZ 2.0 data released by researchers in University of Cambridge available here
-- annotated_user_da_with_span_full.json: A preprocessed and fully annotated version of MultiWOZ 2.0 data released by developers of Convlab available here
+- data.json: The orignal MultiWOZ 2.0 data released by researchers in University of Cambridge.
+- annotated_user_da_with_span_full.json: A preprocessed and fully annotated version of MultiWOZ 2.0 data released by developers of Convlab.
 We mainly show the implementation process on MultiWOZ 2.0. If you want to implement later versions you'll have to get the dataset yourself and change the corresponding paths in the scripts or use the scripts postfixed with "21".
 
 ## Evaluation
