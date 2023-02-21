@@ -2,19 +2,16 @@
 This is the code and data of six expeiments mentioned in the paper "PUB-R: End-to-End TOD System via Turn-Based Positioning". 
 
 ## Description
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| 第三欄        | 靠右對齊      | $1600 |
-| 第二欄        | 置中對齊      |   $12 |
-| 斑馬條紋      | 是整齊的      |    $1 |
+
+
 | Setting | Description | Action Span Used | Positioning Representation |
-| :----: | :----: | :----: |
+| ------- | ----------- | ---------------- | -------------------------- |
 | 1 | Original method used in the 2021 AAAI paper UBAR | Y | - | 
-| 2 | - | N | - | 
-| 3 |  Our final method | Y | ATP | 
-| 4 |  - | N | ATP | 
-| 5 | - | Y | RTP-F | 
-| 6 | - | Y | RTP-P | 
+| 2 | Try to remove action span from Setting 1 | N | - | 
+| 3 | Our final method - TPEM | Y | ATP | 
+| 4 | Try to remove action span from Setting 3 | N | ATP | 
+| 5 | TPEM-variant 1 | Y | RTP-F | 
+| 6 | TPEM-variant 2  | Y | RTP-P | 
 
 ## Requirements
 - CUDA 10.1
@@ -34,7 +31,6 @@ data.json: The orignal MultiWOZ 2.0 data released by researchers in University o
 annotated_user_da_with_span_full.json: A preprocessed and fully annotated version of MultiWOZ 2.0 data released by developers of Convlab available here
 We mainly show the implementation process on MultiWOZ 2.0. If you want to implement later versions you'll have to get the dataset yourself and change the corresponding paths in the scripts or use the scripts postfixed with "21".
 
-Get ready for preprocessng:
+## Evaluation
 
-python data_analysis.py
-python preprocess.py
+## Training
